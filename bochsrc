@@ -1,0 +1,14 @@
+megs: 32
+
+romimage: file=/home/han/tmp_dir/bochs/bochs_hardware/BIOS-bochs-latest
+vgaromimage: file=/home/han/tmp_dir/bochs/bochs_hardware/VGABIOS-lgpl-latest
+
+boot: disk
+
+log:/home/han/tmp_dir/bochs/bochs.log
+
+mouse: enabled=0
+keyboard: keymap=/home/han/tmp_dir/bochs/bochs_hardware/x11-pc-us.map
+
+ata0: enabled=1, ioaddr1=0x1f0, ioaddr2=0x3f0, irq=14
+ata0-master: type=disk, path="/home/han/tmp_dir/bochs/bochs_hardware/hd60M.img", mode=flat
